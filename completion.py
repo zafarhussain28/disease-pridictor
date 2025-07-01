@@ -72,7 +72,8 @@ st.write(
 )
 
 # ✅ Load and clean dataset
-df = pd.read_csv("/content/Symptom2Disease.csv")
+df = pd.read_csv("Symptom2Disease.csv")
+
 df = df.drop(columns=["Unnamed: 0"], errors='ignore')
 df.columns = df.columns.str.strip()
 df = df.dropna()
